@@ -1,0 +1,29 @@
+name: Bug report
+description: Something did not work the way the plugin said it would
+labels: [bug]
+body:
+  - type: dropdown
+    id: host
+    attributes:
+      label: Which git host, if any?
+      options: [GitHub, GitLab, 'None — export/ZIP only']
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you do, what did the plugin say on screen, and what did you expect?
+      placeholder: I pressed … and the band said …
+    validations:
+      required: true
+  - type: input
+    id: system
+    attributes:
+      label: Roughly how big is the design system?
+      placeholder: e.g. 600 variables, 8 collections
+  - type: textarea
+    id: shots
+    attributes:
+      label: Screenshots
+      description: A screenshot of the plugin screen (and the repository page, if relevant) helps a lot.
