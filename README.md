@@ -6,6 +6,9 @@ Turn your Figma variables, text styles and shadows into SCSS, CSS custom propert
 or a Tailwind v4 theme. Publish to your GitHub or GitLab repository in one click, and bring
 value changes from code back into Figma.
 
+The files in your repository are the finished ones — ready to `@use`, import or link. No Style
+Dictionary, no transform pipeline, no build step.
+
 > **Status: in development.** Not yet published to the Figma Community.
 
 ## See it live
