@@ -32,6 +32,11 @@ palette — and a `preview.html` reference. Deployed straight from a published r
 Your design system stays private. The plugin talks only to the git host you connect, and only
 to the repository you name.
 
+## Privacy
+
+Nothing is sent anywhere except the repository you name, and only when you ask. No account, no
+analytics, no server. The full statement: [PRIVACY.md](PRIVACY.md).
+
 ## Support
 
 Something broken, or missing? **[Open an issue](https://github.com/token-portal/token-portal/issues/new/choose)** —
