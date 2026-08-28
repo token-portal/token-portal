@@ -1,36 +1,43 @@
-# Privacy
+# Privacy Statement
 
-Token Portal is built so there is nothing to worry about. This page says exactly what the plugin
-does with your data, and it is short because the plugin does very little with it.
+**Token Portal** (the "Plugin") is a Figma plugin that exports Figma variables and styles into
+code formats and, at the user's request, commits the generated files to a Git repository. This
+statement describes what data the Plugin processes and where that data is transmitted.
 
-## What the plugin reads
+## Data the Plugin reads
 
-Your Figma variables, text styles and shadows — in the file where you run it, when you press
-**Get started** and again when you return to the plugin. When a variable references one from a
-library you have enabled, the plugin follows the reference and reads that value too. Reading
-sends nothing anywhere.
+The Plugin reads design data from the Figma file in which it is run: variables, text styles and
+effect styles. Where a variable references a variable from an enabled library, the referenced
+value is also read. Reading occurs when the Plugin is started and when it regains focus. Reading
+does not involve any network transmission.
 
-## Where your data goes
+## Data transmission
 
-To exactly one place: the Git repository **you** name — GitHub or GitLab — and only when you
-press **Connect**, **Check the repository** or **Publish**. The plugin's network access is
-declared to Figma and limited to those two hosts; it cannot talk to anything else.
+Generated files are transmitted exclusively to the Git hosting service and repository configured
+by the user (GitHub or GitLab), and only upon an explicit action: connecting a repository,
+requesting a check, or publishing. The Plugin's network access is declared in its manifest and is
+restricted to `api.github.com` and `gitlab.com`.
 
-There is no server of ours, no account, no analytics, no telemetry, no crash reporting. Nothing
-runs in the background. If you only use **Download ZIP**, nothing leaves your machine at all.
+The Plugin operates without any first-party server infrastructure. It does not collect analytics,
+telemetry, usage statistics or crash reports, and no background processes run between sessions.
+When only the local export function (ZIP download) is used, no data leaves the user's machine.
 
-## The access token
+## Access tokens
 
-The token you paste is stored by Figma on your computer, and only if you tick **Remember this
-token on this computer**. Figma stores it unencrypted — the plugin says so right next to the
-checkbox. **Disconnect** removes the token; the repository address stays.
+A repository access token provided by the user is stored locally through Figma's plugin storage,
+and only when the corresponding option is enabled. Figma stores this value unencrypted; the
+Plugin states this at the point of entry. Disconnecting a repository deletes the stored token.
+Tokens are transmitted only to the Git hosting service they belong to and never appear in
+generated files or error messages.
 
-## What we know about you
+## Personal data
 
-Nothing. We cannot see your design system, your repositories, your token, your name or whether
-you have paid — payment status, when payments exist, is known only to Figma.
+The Plugin does not collect, store or transmit personal data. The developer has no access to
+users' design data, repositories, tokens or identities. Payment status, where applicable, is
+determined and held solely by Figma.
 
-## Questions
+## Contact
 
-Ask on the [issues page](https://github.com/token-portal/token-portal/issues). If this page and
-the plugin ever disagree, that is a bug — please report it.
+Enquiries regarding this statement may be submitted via the
+[public issue tracker](https://github.com/token-portal/token-portal/issues). Any discrepancy
+between this statement and the Plugin's actual behaviour is treated as a defect.

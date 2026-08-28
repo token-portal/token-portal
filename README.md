@@ -34,8 +34,8 @@ to the repository you name.
 
 ## Privacy
 
-Nothing is sent anywhere except the repository you name, and only when you ask. No account, no
-analytics, no server. The full statement: [PRIVACY.md](PRIVACY.md).
+Data is transmitted only to the repository configured by the user, and only on explicit action.
+No accounts, no analytics, no first-party servers. Full statement: [PRIVACY.md](PRIVACY.md).
 
 ## Support
 
