@@ -32,6 +32,16 @@ palette — and a `preview.html` reference. Deployed straight from a published r
 Your design system stays private. The plugin talks only to the git host you connect, and only
 to the repository you name.
 
+## How it's built
+
+Token Portal is developed with Claude (Fable 5, Anthropic) — the code is written by the model,
+directed and reviewed by its author. That method is why the discipline is unusually visible:
+every claim about an external API is verified against its documentation, every release is tested
+against two deliberately unlike design systems and walked end-to-end before shipping, and every
+found defect becomes a test before it becomes a fix. The plugin is in active development;
+[reports](https://github.com/token-portal/token-portal/issues) are the fastest way to make it
+better.
+
 ## Privacy
 
 Data is transmitted only to the repository configured by the user, and only on explicit action.
