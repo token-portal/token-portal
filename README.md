@@ -16,8 +16,8 @@ Dictionary, no transform pipeline, no build step.
 Every publish writes a `showcase.html` built from your own tokens — components, type scale,
 palette — and a `preview.html` reference. Deployed straight from a published repository:
 
-- **Showcase:** https://denis514.github.io/design-system-demo/tokens/showcase.html
-- **Token reference:** https://denis514.github.io/design-system-demo/tokens/preview.html
+- **Showcase:** https://token-portal.github.io/design-system-demo/tokens/showcase.html
+- **Token reference:** https://token-portal.github.io/design-system-demo/tokens/preview.html
 
 ## How it works
 
